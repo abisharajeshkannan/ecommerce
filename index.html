@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EasyCart - a simple online store demo built with HTML, CSS and JavaScript.">
+  <title>EasyCart — Simple Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top navigation bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/home" aria-label="EasyCart home">
+        <span class="brand-mark">E</span>
+        <span class="brand-text">EasyCart <small>Simple Online Store</small></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#/home" data-route="home">🏠 Home</a>
+        <a href="#/products" data-route="products">🛍️ Products</a>
+        <a href="#/cart" data-route="cart">🛒 Cart <span id="cart-count" class="badge" aria-label="Items in cart">0</span></a>
+        <a href="#/orders" data-route="orders">📦 Orders</a>
+        <a href="#/admin" data-route="admin">⚙️ Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Every page is drawn into this element by script.js -->
+  <main id="app" class="container">
+    <noscript>
+      <p class="notice warn">EasyCart needs JavaScript. Please enable JavaScript in your browser.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <p>EasyCart is a college demo project. No real payments are taken and no real orders are shipped.</p>
+  </footer>
+
+  <!-- Small pop-up message for "added to cart", "saved", etc. -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
